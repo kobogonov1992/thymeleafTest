@@ -1,7 +1,10 @@
 package kg.megacom.thymeleaf;
 
+import kg.megacom.thymeleaf.domain.User;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +20,7 @@ public class Config {
 
     @Bean
     public Long getUserId() {
-        return ThreadLocalRandom.current().nextLong(100);
+        return  ThreadLocalRandom.current().nextLong(100);
     }
+
 }
